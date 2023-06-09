@@ -5,8 +5,23 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
             color: #333;
+        }
+        .bg_pattern {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #ffe9a7;
+            opacity: 0.4;
+            z-index: -1;
+        }
+        .Cross {
+            background-image: linear-gradient(45deg, #ffc107 25%, transparent 25%), linear-gradient(315deg, #ffc107 25%, #ffe9a7 25%);
+            background-position: 10px 0, 20px 0, 0 0, 0 0;
+            background-size: 20px 20px;
+            background-repeat: repeat;
         }
         h1, h2, h3 {
             color: #b7410e;
@@ -39,6 +54,7 @@
     </script>
 </head>
 <body>
+    <div class="bg_pattern Cross"></div>
     <h1>【初級BBQ検定】7/23和歌山にて開催</h1>
     <img src="https://i2.wp.com/jbbqa.org/site/wp/wp-content/uploads/2023/06/DSCF4278-コピー.jpg" alt="BBQ">
     <p>BBQ好きでスキルアップしたい方、BBQが得意な方も、新しい世界が広がります。BBQがまったくわからない方でも大丈夫、基礎の基礎からお伝えいたします！アウトドア好きな方、女性もたくさん参加されている検定です。バーベキューの概念が変わります！試食もたくさん！検定を通じてBBQテクニックや知識を身につけ、ぜひ楽しみましょう！</p>
@@ -106,12 +122,22 @@
     <h2>合否結果について<span id="content3-button" class="toggle" onclick="toggleContent('content3')">詳細 ▼</span></h2>
     <div id="content3" class="content">
         <p>合否結果は郵送でお届けします。</p>
-        <p>合格者対象に希望者は「日本バーベキュー協会BBQインストラクター」に認定します。</p>
+       <p>合格者対象に希望者は「日本バーベキュー協会BBQインストラクター」に認定します。</p>
         <p>BBQ検定に合格された方限定で、日本バーベキュー協会　認定BBQインストラクター登録が可能になります。</p>
         <p>初級 BBQ インストラクタ ー 登録費 別途 3300 円（ 税込み・ 初回年会費免除）</p>
         <p>※初年度年会費検定試験合格後インストラクターご登録いただいた方には、BBQ検定に合格したことが認定され、 「BBQインストラクター」であることを証明する認定証とIDカードが日本バーベキュー協会より発行されます（一ヶ月後）</p>
         <p>※公認「BBQインストラクター」は、中級BBQインストラクターの受検資格、日本バーベキュー協会開催イベント優先参加、認定バッジやインストラクターグッズなど日本バーベキュー協会限定グッズの購入も可能になります。</p>
     </div>
-    <h2>キャンセルについ
+    <h2>キャンセルについて<span id="content4-button" class="toggle" onclick="toggleContent('content4')">詳細 ▼</span></h2>
+    <div id="content4" class="content">
+        <ul>
+            <li>開催日の7日前より30%</li>
+            <li>開催日の3日前より50%</li>
+            <li>当日は全額（いかなる理由でもキャンセル料はかかります）</li>
+            <li>※返金のお振込み手数料はご負担ください</li>
+        </ul>
+    </div>
+    <h2>お問い合わせ</h2>
+   
 
-  
+   
