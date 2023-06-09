@@ -3,44 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>基礎講座学習</title>
-    <style>
-        .details {
-            display: none;
-        }
-    </style>
-    <script>
-        function toggleDetails(id) {
-            var x = document.getElementById(id);
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
-        }
-    </script>
+    <title>【初級BBQ検定】7/23和歌山にて開催 | Japan Barbecue Association</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>基礎講座学習</h1>
-    <h2>① 基礎座学講習</h2>
-    <ul>
-        <li><a href="javascript:void(0);" onclick="toggleDetails('detail1')">ＢＢＱの文化、歴史</a>
-            <p id="detail1" class="details">ここに詳細を書く</p>
-        </li>
-        <li><a href="javascript:void(0);" onclick="toggleDetails('detail2')">人はなぜバーベキューに惹きつけられるのか</a>
-            <p id="detail2" class="details">ここに詳細を書く</p>
-        </li>
-        <!-- 以下同様に他の項目を追加 -->
-    </ul>
-    <h2>② 実技講習　試食有（１２０分）</h2>
-    <ul>
-        <li><a href="javascript:void(0);" onclick="toggleDetails('detail3')">スマートな炭の起し方</a>
-            <p id="detail3" class="details">ここに詳細を書く</p>
-        </li>
-        <li><a href="javascript:void(0);" onclick="toggleDetails('detail4')">分厚いステーキを美味しく焼くコツ</a>
-            <p id="detail4" class="details">ここに詳細を書く</p>
-        </li>
-        <!-- 以下同様に他の項目を追加 -->
-    </ul>
+    <header>
+        <h1>【初級BBQ検定】7/23和歌山にて開催</h1>
+    </header>
+    <main>
+        <section>
+            <h2>基礎座学講習（90分）</h2>
+            <button id="detailsButton">詳細を見る</button>
+            <div id="details" style="display: none;">
+                <ul>
+                    <li>BBQの文化、歴史</li>
+                    <li>人はなぜバーベキューに惹きつけられるのか</li>
+                    <li>実は裾野の広いBBQ産業</li>
+                    <li>BBQでの地域おこしができる！</li>
+                    <li>日本の未来が見える海外の先進的なBBQ事情</li>
+                    <li>茶道とBBQの共通点</li>
+                    <li>「野外焼き肉」と「BBQ」は違う</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <h2>実技講習　試食有（１２０分）</h2>
+            <!-- ここに実技講習の詳細を入れる -->
+        </section>
+    </main>
+    <footer>
+        <!-- ここにフッター情報を入れる -->
+    </footer>
+
+    <script>
+        document.getElementById('detailsButton').addEventListener('click', function() {
+            var details = document.getElementById('details');
+            if (details.style.display === 'none') {
+                details.style.display = 'block';
+            } else {
+                details.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html>
