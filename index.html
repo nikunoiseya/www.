@@ -15,25 +15,25 @@
             display: none;
             margin-left: 20px;
         }
-        .toggle:after {
-            content: "▼";
-            float: right;
-        }
-        .toggle.open:after {
-            content: "▲";
-            float: right;
+        .toggle {
+            display: inline-block;
+            color: white;
+            background-color: #b7410e;
+            padding: 5px 10px;
+            margin-left: 10px;
+            cursor: pointer;
         }
     </style>
     <script>
         function toggleContent(id) {
             var content = document.getElementById(id);
-            var header = document.getElementById(id + '-header');
+            var button = document.getElementById(id + '-button');
             if (content.style.display === 'none') {
                 content.style.display = 'block';
-                header.classList.add('open');
+                button.textContent = '詳細 ▲';
             } else {
                 content.style.display = 'none';
-                header.classList.remove('open');
+                button.textContent = '詳細 ▼';
             }
         }
     </script>
@@ -72,7 +72,7 @@
     <h2>講師: 下城民夫</h2>
     <p>日本バーベキュー協会会長、日本で唯一のバーベキューマスター。アメリカでのBBQ世界大会に日本チーム「BBQ SHOGUN」ピットマスターとして多数出場。アメリカ最大のBBQソサエティのKCBS（Kansas BBQ Society）のメンバーでBBQコンテストの審査員の資格保持。テレビ、ラジオなどメディアにも多数出演。</p>
     <h2>検定内容</h2>
-    <h3 id="content1-header" class="toggle" onclick="toggleContent('content1')">1. 基礎座学講習（90分）</h3>
+    <h3>1. 基礎座学講習（90分）<span id="content1-button" class="toggle" onclick="toggleContent('content1')">詳細 ▼</span></h3>
     <div id="content1" class="content">
         <ul>
             <li>BBQの文化、歴史</li>
@@ -84,7 +84,7 @@
             <li>「野外焼き肉」と「BBQ」は違う</li>
         </ul>
     </div>
-    <h3 id="content2-header" class="toggle" onclick="toggleContent('content2')">2. 実技講習　試食有（120分）</h3>
+    <h3>2. 実技講習　試食有（120分）<span id="content2-button" class="toggle" onclick="toggleContent('content2')">詳細 ▼</span></h3>
     <div id="content2" class="content">
         <ul>
             <li>スマートな炭の起し方</li>
@@ -103,16 +103,16 @@
     </div>
     <p>3. 筆記試験　30問　10分 ※講習内で学んでいただきますので事前勉強必要なし</p>
     <p>4. エンドBBQ　20分</p>
-    <h2 id="content3-header" class="toggle" onclick="toggleContent('content3')">質問受付</h2>
+    <h2 id="content3-button" class="toggle" onclick="toggleContent('content3')">質問受付<span>詳細 ▼</span></h2>
     <div id="content3" class="content">
         <p>合否結果は郵送でお届けします。</p>
         <p>合格者対象に希望者は「日本バーベキュー協会BBQインストラクター」に認定します。</p>
         <p>BBQ検定に合格された方限定で、日本バーベキュー協会　認定BBQインストラクター登録が可能になります。</p>
-        <p>初級 BBQ インストラクタ ー 登録費 別途 3300 円（ 税込み・ 初回年会費免除）</p>
+        <p>初級BBQ インストラクタ ー 登録費 別途 3300 円（ 税込み・ 初回年会費免除）</p>
         <p>※初年度年会費検定試験合格後インストラクターご登録いただいた方には、BBQ検定に合格したことが認定され、 「BBQインストラクター」であることを証明する認定証とIDカードが日本バーベキュー協会より発行されます（一ヶ月後）</p>
         <p>※公認「BBQインストラクター」は、中級BBQインストラクターの受検資格、日本バーベキュー協会開催イベント優先参加、認定バッジやインストラクターグッズなど日本バーベキュー協会限定グッズの購入も可能になります。</p>
     </div>
-    <h2 id="content4-header" class="toggle" onclick="toggleContent('content4')">キャンセルについて</h2>
+    <h2 id="content4-button" class="toggle" onclick="toggleContent('content4')">キャンセルについて<span>詳細 ▼</span></h2>
     <div id="content4" class="content">
         <ul>
             <li>開催日の7日前より30%</li>
