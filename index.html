@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>【初級BBQ検定】7/23和歌山にて開催</title>
+    <title>基礎講座学習</title>
     <style>
         .details {
             display: none;
         }
     </style>
     <script>
-        function toggleDetails() {
-            var x = document.getElementById("details");
+        function toggleDetails(id) {
+            var x = document.getElementById(id);
             if (x.style.display === "none") {
                 x.style.display = "block";
             } else {
@@ -21,52 +21,26 @@
     </script>
 </head>
 <body>
-    <h1>【初級BBQ検定】7/23和歌山にて開催</h1>
-    <img src="https://i2.wp.com/jbbqa.org/site/wp/wp-content/uploads/2023/06/DSCF4278-コピー.jpg?fit=860%2C574&ssl=1" alt="BBQ Image">
-    <p>BBQ好きでスキルアップしたい方、BBQが得意な方も、新しい世界が広がります。BBQがまったくわからない方でも大丈夫、基礎の基礎からお伝えいたします！アウトドア好きな方、女性もたくさん参加されている検定です。バーベキューの概念が変わります！試食もたくさん！検定を通じてBBQテクニックや知識を身につけ、ぜひ楽しみましょう！</p>
-    <h2>開催詳細</h2>
+    <h1>基礎講座学習</h1>
+    <h2>① 基礎座学講習</h2>
     <ul>
-        <li>開催日時：2023年7月23日（日）10時～15時　（受付）9時30分～※講習の進行により終了時間が遅くなる場合がございます。ご了承ください</li>
-        <li>開催場所：かじか荘〒640-1364 和歌山県海草郡紀美野町菅沢６</li>
-        <li>参加費： BBQ検定参加費 16500円（検定料・講習料・保険料・テキスト代込・ステーキなどの試食あり）</li>
-        <li>持物：筆記用具　飲み物（アルコール不可）マイ皿　マイ箸、マスクはご本人の判断におまかせします。</li>
-        <li>定員：30名</li>
-        <li>注意事項：見学不可・高校生以上・雨天決行</li>
+        <li><a href="javascript:void(0);" onclick="toggleDetails('detail1')">ＢＢＱの文化、歴史</a>
+            <p id="detail1" class="details">ここに詳細を書く</p>
+        </li>
+        <li><a href="javascript:void(0);" onclick="toggleDetails('detail2')">人はなぜバーベキューに惹きつけられるのか</a>
+            <p id="detail2" class="details">ここに詳細を書く</p>
+        </li>
+        <!-- 以下同様に他の項目を追加 -->
     </ul>
-    <h2>ご予約方法</h2```html
-    <p>お申込み：メールにてお願い致します。nvh.yskykw@gmail.com<br>
-    080-2401-9696※タイトルには「0723初級BBQ検定申込希望」とメールをお願いします</p>
-    <p>申込みには以下の情報をご記入ください：<br>
-    1. 氏名(ふりがな)　（複数人でお申込みの場合は、全員のお名前を記載ください）<br>
-    2. 日中連絡が取れる連絡先・住所</p>
-    <h2>講師</h2>
-    <p>下城民夫 :<br>
-    日本バーベキュー協会会長<br>
-    日本で唯一のバーベキューマスター。</p>
-    <h2>検定内容</h2>
-    <button onclick="toggleDetails()">詳細を表示</button>
-    <div id="details" class="details">
-        <ol>
-            <li>基礎座学講習（90分）</li>
-            <li>実技講習　試食有（１２０分）</li>
-            <li>筆記試験　30問　10分 ※講習内で学んでいただきますので事前勉強必要なし</li>
-            <li>エンドＢＢＱ　20分</li>
-        </ol>
-        <p>合格者対象に希望者は「日本バーベキュー協会ＢＢＱインストラクター」に認定します。</p>
-    </div>
-    <h2>キャンセルについて</h2>
+    <h2>② 実技講習　試食有（１２０分）</h2>
     <ul>
-        <li>開催日の7日前より30%</li>
-        <li>開催日の3日前より50%</li>
-        <li>当日は全額（いかなる理由でもキャンセル料はかかります）</li>
-        <li>※返金のお振込み手数料はご負担ください</li>
+        <li><a href="javascript:void(0);" onclick="toggleDetails('detail3')">スマートな炭の起し方</a>
+            <p id="detail3" class="details">ここに詳細を書く</p>
+        </li>
+        <li><a href="javascript:void(0);" onclick="toggleDetails('detail4')">分厚いステーキを美味しく焼くコツ</a>
+            <p id="detail4" class="details">ここに詳細を書く</p>
+        </li>
+        <!-- 以下同様に他の項目を追加 -->
     </ul>
-    <h2>お問い合わせ</h2>
-    <p>nvh.yskykw@gmail.com<br>
-    080-2401-9696</p>
-    <p>備考★プログラム進行により終了時間が延びる可能性が有ります。<br>
-    ★BBQ講習会がありますのでBBQに参加できる服装で起こしください。<br>
-    ★雨天でも開催しますが、荒天時や新型コロナウイルス流行状況や社会状況により当日であっても中止や変更することが有ります。予めご了承ください。<br>
-    ★試験は当日学んだ中からの出題。事前勉強は一切不要。合否結果は郵送にて発表致します。</p>
 </body>
 </html>
